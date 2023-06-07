@@ -1,0 +1,107 @@
+/* * {
+  border: 1px dotted red;
+} */
+
+.sign__in {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.signin__left-side {
+  background: #1b1a17;
+  color: #ffffff;
+  position: relative;
+}
+
+.left-side__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.left-side__text > h1 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.left-side__text > h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.signin__right-side {
+  background: #ffffff;
+  position: relative;
+}
+
+.signin__right-side .container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 20%;
+}
+
+.signin__right-side h1 {
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.signin__form form {
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+  margin-top: 3em;
+  gap: 2em !important;
+}
+
+.signin__form .text-muted > a {
+  text-decoration: none;
+}
+
+.signin__form .form-label {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.signin__form button {
+  padding: 0.5em 1.5em !important;
+  font-size: 18px;
+}
+
+@media only screen and (max-device-width: 960px) {
+  .sign__in {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr;
+  }
+
+  .signin__right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .signin__right-side .container {
+    width: 85%;
+    border-radius: 0;
+    padding: 3em 0;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+      rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  }
+
+  .signin__right-side .bottom__text {
+    top: 5em;
+    right: 1em;
+  }
+
+  .signin__left-side {
+    display: none;
+  }
+}

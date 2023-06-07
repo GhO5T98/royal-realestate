@@ -1,0 +1,95 @@
+/* * {
+    border: 1px dotted red;
+} */
+
+.property__hero {
+  margin-top: 4em;
+  position: relative;
+  text-align: center;
+}
+.property__hero .fluid {
+  width: 100%;
+  max-height: 45vh;
+  object-fit: cover;
+}
+
+.list__property {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255);
+  z-index: 2;
+}
+
+.property__hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.property__hero .overlay {
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
+.property__list-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.5em;
+  width: 88%;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  cursor: pointer;
+  padding: 2em 0;
+}
+
+.property__list-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.property__list-section form input,
+.property__list-section form textarea {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #000;
+}
+
+.property__list-section form .form-label {
+  font-size: 13px;
+  font-weight: 600;
+  position: relative;
+}
+
+#property__desc-label {
+  margin-bottom: 2em;
+}
+
+.property__list-section i {
+  font-size: 19px;
+  position: absolute;
+  margin-left: 3px;
+}
+
+@media only screen and (max-device-width: 993px) {
+  .property__list-section .container {
+    padding: 2em 2.5em;
+  }
+}
+
+@media only screen and (max-device-width: 578px) {
+  .property__hero {
+    margin-top: 3em;
+  }
+  .list__property {
+    font-size: 35px;
+  }
+}

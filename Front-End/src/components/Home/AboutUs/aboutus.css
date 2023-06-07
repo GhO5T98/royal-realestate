@@ -1,0 +1,23 @@
+.about__section .container {
+    width: 88%;
+    margin-top: 7em !important;
+}
+
+.about__section img {
+width: 100%;
+}
+
+.about__section p {
+    font-size: 15px;
+    line-height: 22.5px;
+}
+
+@media only screen and (max-device-width: 993px) {
+  
+
+  .about__reverse__row{
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    gap: 1.5em;
+  }
+}

@@ -1,0 +1,22 @@
+.all__properties {
+  margin: 5.5em 0;
+}
+
+.all__properties .container {
+  width: 88%;
+}
+
+.all__properties-gallery {
+  margin-top: 3.5em;
+}
+
+.all__properties .property__card {
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  cursor: pointer;
+}
+
+.all__properties .property__card:hover {
+  box-shadow: rgba(147, 147, 147, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}

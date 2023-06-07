@@ -1,0 +1,54 @@
+.popular-p__section {
+  background: linear-gradient(
+    to bottom,
+    #fff 0%,
+    #fff 50%,
+    #000 50%,
+    #000 100%
+  );
+  padding-bottom: 12.4em;
+}
+
+.popular-p__section .container {
+  margin-top: 15em;
+  width: 88%;
+}
+
+.h-4 {
+  display: flex;
+  flex-direction: row;
+}
+
+.small__header {
+  overflow: hidden;
+  line-height: 1.6em;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+
+.small__header::before {
+  display: block;
+  margin-right: 0.5em;
+  float: left;
+  margin-top: 0.7em; /* half the line-height */
+  border-top: 1px solid rgb(0, 0, 0);
+  width: 3%;
+  content: "";
+}
+
+.big__header {
+  font-size: 30px;
+  font-weight: 700;
+  overflow: hidden;
+  line-height: 1.6em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+
+
+#explore__all {
+  text-decoration: none;
+  color: #000;
+}
