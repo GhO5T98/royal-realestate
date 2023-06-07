@@ -18,7 +18,7 @@ const Agents = () => {
   useEffect(() => {
     const fetchData = async () => {
       await axios
-        .get("http://localhost:5001/Agents")
+        .get("https://royal-realestate.onrender.com/Agents")
         .then((res) => {
           console.log(res.data);
           setAgents(res.data);

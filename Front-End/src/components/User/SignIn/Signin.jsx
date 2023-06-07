@@ -21,7 +21,7 @@ const Signin = () => {
     };
     // Therritja e api
     await axios
-      .post("http://localhost:5001/signin", User)
+      .post("https://royal-realestate.onrender.com/signin", User)
       .then((res) => {
         // Shfaqja e te dhenave - testim
         // console.log(res.data)

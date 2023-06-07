@@ -24,7 +24,7 @@ const Signup = () => {
     };
 
     await axios
-      .post('http://localhost:5001/signup', newUser)
+      .post('https://royal-realestate.onrender.com/signup', newUser)
       .then((res) => {
         // Shfaq te dhenat testim
         // console.log(res.data)

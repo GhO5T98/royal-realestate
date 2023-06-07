@@ -11,7 +11,7 @@ const PopularProperties = () => {
     const fetchData = async () => {
       // therrirja e api
       await axios
-        .get("http://localhost:5001/get_all")
+        .get("https://royal-realestate.onrender.com/get_all")
         .then((res) => {
           // Shfaqja tek console i te dhenave
           // console.log(res.data)

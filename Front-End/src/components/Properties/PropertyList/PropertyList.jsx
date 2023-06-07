@@ -77,7 +77,7 @@ const PropertyList = () => {
 
     // Therritja e app
     await axios
-      .post("http://localhost:5001/listproperty", newProperty)
+      .post("https://royal-realestate.onrender.com/listproperty", newProperty)
       .then((res) => {
         // pas krijimit kallohet tek faqja kryesore
         console.log("Success");

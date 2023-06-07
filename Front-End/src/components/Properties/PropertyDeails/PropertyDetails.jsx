@@ -23,7 +23,7 @@ const PropertyDetails = () => {
       }
       // therritja e apit
       await axios
-        .get(`http://localhost:5001/getPropertyDetail/${id}`)
+        .get(`https://royal-realestate.onrender.com/getPropertyDetail/${id}`)
         .then((res) => {
           setProperty(res.data);
           setTitle(res.data.title);
@@ -100,7 +100,7 @@ const PropertyDetails = () => {
     };
     // therritja e apit
     await axios
-      .patch(`http://localhost:5001/updateProperty/${id}`, propertyUpdate)
+      .patch(`https://royal-realestate.onrender.com/updateProperty/${id}`, propertyUpdate)
       .then(() => {
         navigate(`/Property/${id}`);
         setUpdateMode(false);
@@ -115,7 +115,7 @@ const PropertyDetails = () => {
   //Delete//
   const handleDelete = async (id) => {
     await axios
-      .delete(`http://localhost:5001/delete/${id}`)
+      .delete(`https://royal-realestate.onrender.com/delete/${id}`)
       .then((res) => {
         navigate("/Properties");
       })
